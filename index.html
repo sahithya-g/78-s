@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Family</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <body>
+            <h1>My Family book</h1>
+            <img id="img1" src="https://image.shutterstock.com/image-vector/love-my-family-260nw-448420321.jpg"><br>
+            <button id="bt1" onclick="change()">Next</button>
+           <script>
+            var images=["https://cdn1.vectorstock.com/i/1000x1000/95/10/big-brother-doing-piggyback-ride-younger-brother-vector-21559510.jpg","https://cdn1.byjus.com/wp-content/uploads/2019/11/my-mother-essay-for-class-3.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbhFzaPhmEuLy3jOktYXYW-1XiYuLuTTFgw&usqp=CAU","https://image.shutterstock.com/image-vector/beautiful-cute-girls-friends-vector-260nw-1294450351.jpg"];
+var i=0;
+function change(){
+    if(i==3){
+        i=0;
+    }
+document.getElementById("img1").src=images[i];
+i++;
+}</script>
+        </body>
+    </head>
+</html>
